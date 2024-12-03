@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- link normalize file  -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- link main style sheet  -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Complete responsive coffee shop website using html, css and javascript</title>
+</head>
+
+<body>
+    <!-- START HEADER SECTION -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <nav class="navbar" id="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+            <a href="#faq">faq</a>
+        </nav>
+        <div class="icons">
+            <span class="fas fa-search" id="search-btn"></span>
+            <span class="fas fa-shopping-cart" id="cart-btn"></span>
+            <span class="fas fa-bars" id="menu-btn"></span>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <d class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-1.png" alt="cart-item">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <p class="price">$10.99</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-2.png" alt="cart-item">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <p class="price">$10.99</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-3.png" alt="cart-item">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <p class="price">$10.99</p>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </d>
+    </header>
+    <!-- END HEADER SECTION -->
+    <!-- START HOME SECTION -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Where every cup tells a story</h3>
+            <p>freshly roasted, perfectly brewed. let every cup tell <br>
+                a story of quality and passion for the perfect coffee.
+            </p>
+            <a href="#" class="btn">get yours now</a>
+        </div>
+        <div class="image">
+            <img src="images/coffee-cup-1.png" alt="coffee cup" id="main-image">
+        </div>
+    </section>
+    <div class="image-gallery">
+        <img src="images/coffee-cup-1.png" alt="coffee 1" class="thumbnail"
+            onclick="changeImage('image/coffee-cup-1.png')">
+        <img src="images/coffee-cup-2.png" alt="coffee 2" class="thumbnail"
+            onclick="changeImage('image/coffee-cup-2.png')">
+        <img src="images/coffee-cup-3.png" alt="coffee 3" class="thumbnail"
+            onclick="changeImage('image/coffee-cup-3.png')">
+        <img src="images/coffee-cup-4.png" alt="coffee 4" class="thumbnail"
+            onclick="changeImage('image/coffee-cup-4.png')">
+        <img src="images/coffee-cup-5.png" alt="coffee 5" class="thumbnail"
+            onclick="changeImage('image/coffee-cup-5.png')">
+    </div>
+    <!-- END HOME SECTION -->
+    <!-- START ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="heading"><span>About</span> us</div>
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img.PNG" alt="coffee">
+            </div>
+            <div class="content">
+                <h3>what choose coffee?</h3>
+                <p>At our coffee house, every cup tells a story. From the mountains where our beans are handpicked to
+                    the hands that craft them into your favorite brews, we prioritize quality and care in every step.
+                </p>
+                <p>We focus on providing freshly brewed, ethically sourced coffee that connects communities and
+                    satisfies your soul. Whether it�s a quiet moment to yourself or a shared experience, our coffee
+                    makes it memorable.
+                </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT SECTION -->
+    <!-- START EXPLORE SECTION -->
+    <section class="explore-menu" id="menu">
+        <div class="heading">Explore our <span>menu</span></div>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/menu1a.png" alt="menu-img 1">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu1b.png" alt="menu-img 2">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu2a.png" alt="menu-img 3">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu2b.png" alt="menu-img 4">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu3a.png" alt="menu-img 5">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu3b.png" alt="menu-img 6">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu4a.png" alt="menu-img 8">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+            <div class="menu-item">
+                <img src="images/menu4b.png" alt="menu-img 8">
+                <div class="menu-details">
+                    <h3>Cafe latte</h3>
+                    <p>fresh brewed coffee and steamed milk</p>
+                </div>
+                <span class="price">$3.45</span>
+            </div>
+        </div>
+    </section>
+    <!-- END EXPLORE SECTION -->
+    <!-- start products section -->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p2.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="images/p6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>coffee product</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$10.99 <span>$19.99</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end products section -->
+    <!-- start section -->
+    <section class="review" id="review">
+        <h1 class="heading">customer's <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/quote-img.png" alt="quote-img" class="quote">
+                <p>This coffee is amazing! The aroma alone wakes me up, and the flavor is rich and smooth. I've tried
+                    many brands, but this one truly stands out for its quality and taste. Highly recommended for any
+                    coffee lover!
+                </p>
+                <img src="images/pic-1.png" class="user" alt="">
+                <h3>john doe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/quote-img.png" alt="quote-img" class="quote">
+                <p>This coffee is amazing! The aroma alone wakes me up, and the flavor is rich and smooth. I've tried
+                    many brands, but this one truly stands out for its quality and taste. Highly recommended for any
+                    coffee lover!
+                </p>
+                <img src="images/pic-2.png" class="user" alt="">
+                <h3>john doe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/quote-img.png" alt="quote-img" class="quote">
+                <p>This coffee is amazing! The aroma alone wakes me up, and the flavor is rich and smooth. I've tried
+                    many brands, but this one truly stands out for its quality and taste. Highly recommended for any
+                    coffee lover!
+                </p>
+                <img src="images/pic-3.png" class="user" alt="">
+                <h3>john doe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start contact section -->
+    <section class="contact-us" id="contact">
+        <h1 class="heading">contact <span>us</span></h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>contact information</h2>
+                <p><strong>EMAIL:</strong></p>
+                <p class="info-value">contact@example.com</p>
+
+                <p><strong>PHONE:</strong></p>
+                <p class="info-value">0123-456-789</p>
+
+                <p><strong>ADDRESS:</strong></p>
+                <p class="info-value">123 main street, downtown city, UIE</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="User Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Submit Form</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- end contact section -->
+    <!-- start blog section -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 29th nov, 2024</span>
+                    <p>Discover the art of brewing a perfect cup and learn about unique coffee flavors that invigorate
+                        the senses.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 29th nov, 2024</span>
+                    <p>Discover the art of brewing a perfect cup and learn about unique coffee flavors that invigorate
+                        the senses.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">tasty and refreshing coffee</a>
+                    <span>by admin / 29th nov, 2024</span>
+                    <p>Discover the art of brewing a perfect cup and learn about unique coffee flavors that invigorate
+                        the senses.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end blog section -->
+    <!-- start faq section -->
+    <section class="faq" id="faq">
+        <h1 class="heading">Frequently <span>asked</span> Questions</h1>
+        <div class="faq-container">
+            <h1>list of commonly asked questions</h1>
+            <div class="faq-item open">
+                <button class="faq-question">
+                    What types of coffee do you offer?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    We offer a variety of coffee options, including espresso, cappuccino, latte, mocha, and cold brews.
+                    We also have seasonal specialties!
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you sell whole beans or ground coffee for home brewing?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Absolutely! We sell premium whole beans and ground coffee in a variety of roasts and blends. You can
+                    also subscribe for monthly deliveries.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you have dairy-free or vegan options?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes, we offer plant-based milk alternatives such as almond, oat, and soy milk. All our syrups are
+                    also vegan-friendly.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is the origin of your coffee beans?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Our coffee beans are ethically sourced from top-quality farms in regions such as Colombia, Ethiopia,
+                    and Brazil, ensuring rich flavors and sustainability.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you have a loyalty program?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes, we have a rewards program where you earn points for every purchase. Points can be redeemed for
+                    free drinks, discounts, and special gifts.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can i order online for pickup or delivery?<span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Yes, you can order online for both pickup and delivery through our website or mobile app. We also
+                    partner with popular delivery platforms.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end faq section -->
+    <!-- start footer section -->
+    <section class="footer">
+        <div class="share">
+            <a href="@" class="fab fa-facebook-f"></a>
+            <a href="@" class="fab fa-twitter"></a>
+            <a href="@" class="fab fa-instagram"></a>
+            <a href="@" class="fab fa-linkedin"></a>
+            <a href="@" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </div>
+        <span class="credit">created by <span>coding with mostafa</span> | All rights reserved</span>
+    </section>
+    <!-- end footer section -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>--
